@@ -1,0 +1,19 @@
+.PetBox{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.PetImage{
+    max-width: 300px;
+    max-width: 300px;
+}
+.PetsInfo{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+}

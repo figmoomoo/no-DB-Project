@@ -1,0 +1,12 @@
+.PetsList{
+    /* height: 400px;
+    width: 400px; */
+    background-color: rgb(225, 241, 255);
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: flex-start;
+}
+
