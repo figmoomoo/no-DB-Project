@@ -9,6 +9,20 @@
     margin-left: 800px;
     margin-right: 800px;
     font-size: 25px;
-    background-color: rgb(223, 249, 255);
-
+    background-color: #375982;
+    color: 	#b5cfff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.SendSharpIcon{
+    color:#b5cfff;
+}
+.SubmitButton{
+    height: 50px;
+    width: 50px;
+}
+input:focus{
+    background-color: rgb(229, 232, 247);
+    border-color: #b5cfff;
+    outline: none;
 }

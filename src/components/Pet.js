@@ -1,5 +1,7 @@
 import React,{ Component } from 'react'
 import PetStyles from '../Styles/PetStyles.css'
+import XIcon from './DeleteButton'
+import MoreHorizIcon from './EditButton'
 
 class Pet extends Component {
     constructor(props){
@@ -66,12 +68,14 @@ class Pet extends Component {
                             <l2>{this.props.info.color}</l2>
                             <l2>{this.props.info.fixed}</l2>
                             <img className="PetImage" src={this.props.info.image}/>
-                            <button onClick={this.toggleEdit}>
-                                Edit
-                            </button>
-                            <button onClick={() => this.props.deletePet(this.props.info.id)}
-                                >Delete (Adopted)
-                            </button>
+                            <div className="BottomButtons">
+                                <div className="EditButton">
+                                    <MoreHorizIcon onClick={this.toggleEdit}/>
+                                </div>
+                                <div className="DeleteButton">             
+                                    <XIcon onClick={() => this.props.deletePet(this.props.info.id)}/>
+                                </div>
+                            </div>
                         </div>
                     )}
                 

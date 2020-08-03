@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import AddFormStyles from '../Styles/AddFormStyles.css'
+import SendSharpIcon from './SubmitButton'
 
 class AddForm extends Component {
     constructor(props){
@@ -43,6 +44,16 @@ class AddForm extends Component {
     saveInput = () => {
         const {name, age, gender, animal, breed, color, fixed, image} = this.state
         this.props.addPet(name, age, gender, animal, breed, color, fixed, image)
+        this.setState({
+            name: "",
+            age: "",
+            gender: "",
+            animal: "",
+            breed: "",
+            color: "",
+            fixed: "",
+            image: ""
+        })
     }
 
     render(){
@@ -50,7 +61,7 @@ class AddForm extends Component {
             <div>
                 <form className="newAnimal">
                     <div>
-                        New Animal Entry
+                        <b>New Animal Entry</b>
                     </div>
                     <input
                         placeholder="Enter Name"
@@ -92,7 +103,9 @@ class AddForm extends Component {
                         value={this.state.image}
                         onChange={(e) => this.imageInput(e.target.value)}
                     />
-                    <button onClick={this.saveInput}>submit</button>
+                    <div className="SubmitButton">
+                    <SendSharpIcon onClick={this.saveInput}/>
+                    </div>
                 </form>
             </div>
         )

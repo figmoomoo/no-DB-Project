@@ -24,7 +24,10 @@ class Pets extends Component {
     addPet = (name, age, gender, animal, breed, color, fixed, image) => {
         axios.post('/api/pet', {name, age, gender, animal, breed, color, fixed, image})
         .then((response) => {
-            this.setState({pets: response.data})
+            this.setState({
+                pets: response.data,
+                // pets: ""
+            })
         })
         .catch(err => console.log(err))
     }

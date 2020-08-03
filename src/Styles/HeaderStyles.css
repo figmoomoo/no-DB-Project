@@ -5,7 +5,9 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	align-items: flex-end;
+    align-items: flex-end;
+    background-image: url("https://cdn.discordapp.com/attachments/718455188100350035/739946955739758592/Header_Background_Image_for_NODB4.png");
+    width: auto;
 }
 
 span{
@@ -14,9 +16,12 @@ span{
     margin: 15px;
     margin-bottom: 80px;
     /* color: #031942; */
-    color: white;
+    /* color: white; */
+    color: #0f3477;
+    mix-blend-mode: overlay;
 }
 
 .logo-image{
     max-height: 220px;
+    mix-blend-mode: overlay;
 }

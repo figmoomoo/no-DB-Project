@@ -10,10 +10,37 @@
     max-width: 300px;
 }
 .PetsInfo{
+    height: 600px;
+    width: 400px;
+    margin-left: 50px;
+    color: 	#b5cfff;
+    background-color: #375982;
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	align-items: center;
-	align-content: stretch;
+    align-content: stretch;
+    border-radius: 10px;
+}
+l2{
+    font-size: 20px;
+}
+.BottomButtons{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.EditButton{
+    height: 100px;
+    width: 100px;
+    color: 	#b5cfff;
+}
+.DeleteButton{
+    height: 100px;
+    width: 100px;
+    color: 	#b5cfff;
 }
