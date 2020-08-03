@@ -50,7 +50,7 @@ class Pets extends Component {
         return(
             <div>
                 <AddForm addPet = {this.addPet}/>
-                <h1>List of Pets</h1>
+                <h1 className="PetsListTitle">List of Pets</h1>
                 <div className="PetsList">
                     {this.state.pets.map((element) =>{
                         return <Pet 

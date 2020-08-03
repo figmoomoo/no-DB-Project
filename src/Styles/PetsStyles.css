@@ -10,3 +10,7 @@
 	align-content: flex-start;
 }
 
+.PetsListTitle{
+	display: flex;
+	justify-content: center;
+}

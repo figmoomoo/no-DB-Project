@@ -5,13 +5,14 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 }
 
 span{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
     margin: 15px;
+    margin-bottom: 80px;
     /* color: #031942; */
     color: white;
 }

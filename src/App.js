@@ -16,7 +16,7 @@ class App extends Component {
         
         <Pets />
         <div className="Footer">
-            
+            Logo and Site by Ⓒ 2020 Samuel Chin
         </div>
       </div>
     )
